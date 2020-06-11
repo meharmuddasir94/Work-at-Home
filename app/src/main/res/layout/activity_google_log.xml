@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/googlesig"
+    android:layout_height="match_parent"
+    tools:context=".Google_log">
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/mybutton"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/WHITE"
+        android:textSize="10dp"
+        android:id="@+id/tvgog"
+/>
+</RelativeLayout>

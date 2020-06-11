@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".creditcard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlsd"
+        android:background="@color/colorred">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="340dp"
+
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:minHeight="?actionBarSize"
+            android:textAlignment="textStart"
+            android:textColor="@color/WHITE"
+            android:text="Add  Credit Card"
+            android:textSize="15dp"
+            android:layout_marginLeft="50dp"
+            android:padding="@dimen/appbar_padding"
+
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+
+            android:layout_height="25dp"
+            android:layout_marginRight="-40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:id="@+id/ig"
+            android:layout_toLeftOf="@id/title"
+            android:src="@drawable/asdf" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+android:layout_below="@id/rlsd"
+        android:id="@+id/card"
+        android:background="@drawable/border"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+
+                android:id="@+id/tvcardname"
+                android:hint="Card Name"
+                android:gravity="left|center"
+                android:background="@drawable/border"/>
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tvcardname"
+                android:background="@drawable/border"
+                android:hint="First Name"
+                android:paddingLeft="10dp" />
+            <EditText
+                android:layout_width="200dp"
+
+                android:hint="Last Name"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/border"
+                android:id="@+id/lastname"
+                android:layout_toRightOf="@id/firstname"
+                android:layout_below="@id/tvcardname"/>
+            <DatePicker
+                android:layout_width="200dp"
+                android:calendarViewShown="true"
+           android:calendarTextColor="@color/bLACK"
+                android:background="@drawable/border"
+                android:layout_height="50dp"
+                android:id="@+id/date"
+
+                android:layout_below="@id/firstname"/>
+            <EditText
+                android:layout_width="200dp"
+
+                android:hint="CVV"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/border"
+                android:id="@+id/CVV"
+                android:layout_toRightOf="@id/firstname"
+                android:layout_below="@id/lastname"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="390dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Pay Now"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColorHint="@color/colorWhite"
+        android:background="@drawable/btn"
+        android:id="@+id/btn2"
+        android:layout_below="@id/card"/>
+</RelativeLayout>

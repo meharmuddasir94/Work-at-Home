@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "854621215393",
+    "firebase_url": "https://work-d2e12.firebaseio.com",
+    "project_id": "work-d2e12",
+    "storage_bucket": "work-d2e12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854621215393:android:71bbd35d802767aac16ee0",
+        "android_client_info": {
+          "package_name": "com.example.work_at_home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854621215393-qbprm4ctiagvl315hgdjpmlip037nqa7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.work_at_home",
+            "certificate_hash": "3faa27d28811161f69c025be8e97a7d3022c0c92"
+          }
+        },
+        {
+          "client_id": "854621215393-ak513va90q69jsalqcvagdhiu0ju3qnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8a6fbhuWKGTYX9inB-5dt3OmzLLsoZdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854621215393-ak513va90q69jsalqcvagdhiu0ju3qnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

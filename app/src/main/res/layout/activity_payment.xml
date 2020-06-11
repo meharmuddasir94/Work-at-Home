@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlsd"
+        android:background="@color/colorred">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="340dp"
+
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:minHeight="?actionBarSize"
+            android:textAlignment="textStart"
+            android:textColor="@color/WHITE"
+            android:text="Order Review"
+            android:textSize="15dp"
+            android:layout_marginLeft="50dp"
+            android:padding="@dimen/appbar_padding"
+
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+
+            android:layout_height="25dp"
+            android:layout_marginRight="-40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:id="@+id/ig"
+            android:layout_toLeftOf="@id/title"
+            android:src="@drawable/asdf" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@id/rlsd"
+        android:id="@+id/paymentrl"
+        android:background="@drawable/border1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ti"
+            android:textColor="@color/bLACK"
+            android:gravity="left|center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Add Payment Method"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio"
+            android:layout_below="@id/ti">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/ti"
+                android:checked="true"
+                android:text="one"
+                android:textColor="@color/WHITE"
+                android:id="@+id/radio1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="two"
+                android:textColor="@color/WHITE"
+
+                android:layout_below="@id/radio1"
+                android:id="@+id/radio2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="three"
+                android:textColor="@color/WHITE"
+
+                android:layout_below="@id/radio2"
+                android:id="@+id/radio3"/>
+        </RadioGroup>
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_marginTop="9dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/ti"
+            android:id="@+id/imgcard"
+            android:layout_toRightOf="@id/radio"
+            android:src="@drawable/ic_baseline_credit_card_24"/>
+
+        <ImageView
+
+            android:background="@drawable/border"
+            android:layout_width="50dp"
+            android:layout_marginTop="9dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgcard1"
+            android:layout_below="@id/imgcard"
+            android:layout_toRightOf="@id/radio"
+            android:src="@drawable/pa"/>
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_marginTop="9dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgcard3"
+            android:background="@drawable/border"
+            android:layout_below="@id/imgcard1"
+            android:layout_toRightOf="@id/radio"
+            android:src="@drawable/unnamed"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="390dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Continue Payment"
+        android:textSize="16sp"
+        android:textColorHint="@color/colorWhite"
+        android:background="@drawable/btn"
+        android:id="@+id/btn2"
+        android:layout_below="@id/paymentrl"/>
+
+
+</RelativeLayout>

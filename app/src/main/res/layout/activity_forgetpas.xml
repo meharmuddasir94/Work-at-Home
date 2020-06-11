@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forgetpas">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/sddf"
+        android:scaleType="fitXY"
+        android:layout_marginTop="-20dp"
+        android:id="@+id/top"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/s"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="270dp"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/edit">
+
+        <TextView
+            android:id="@+id/tvxx"
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:text="Please enter your desired email address which password you want to reset "
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvxx"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="270dp"
+                android:inputType="textEmailAddress"
+                android:layout_height="41dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorWhite"
+                android:hint="Email"
+                android:textColorHint="@color/colorout" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="-38dp"
+                android:layout_toLeftOf="@id/email"
+                android:src="@drawable/ic_perm_identity_black_24dp" />
+        </RelativeLayout>
+        <Button
+            android:layout_width="320dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="56dp"
+            android:onClick="reset"
+            android:hint="Reset Password"
+            android:textSize="16sp"
+            android:textColorHint="@color/colorWhite"
+            android:layout_marginLeft="34dp"
+            android:background="@drawable/grrad"
+            android:id="@+id/btn2"
+            android:layout_below="@id/rl3"/>
+    </RelativeLayout>
+
+</RelativeLayout>

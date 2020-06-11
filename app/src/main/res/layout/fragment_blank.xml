@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BlankFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rand">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_settings_black_24dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/settingss"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/rlll"
+        android:layout_below="@id/rand"
+        android:background="@drawable/grrad">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/image"
+            android:src="@drawable/ic_perm_identity_black_24dp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welocome to Work At Home"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/tv"
+            android:layout_below="@id/image"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guest"
+            android:layout_marginLeft="20dp"
+
+            android:id="@+id/tv1us"
+            android:layout_below="@id/tv"
+
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlll"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainrlv">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="-2dp"
+                android:id="@+id/rl3"
+                android:background="@drawable/border"
+                ><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/real"
+
+                android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imvl"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                       android:padding="10dp"
+                        android:src="@drawable/ic_favorite_border_black_24dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Join Us"
+                        android:layout_toRightOf="@id/imvl"
+                        android:textStyle="bold"
+                        android:id="@+id/join"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginLeft="15dp"
+                        android:textSize="10dp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/real"
+
+                    android:layout_marginTop="15dp"
+                    >
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+
+                        android:src="@drawable/ic_save_black_24dp"
+                        android:id="@+id/imvlsr"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sign In"
+                        android:layout_toRightOf="@id/imvlsr"
+                        android:textStyle="bold"
+                        android:id="@+id/choss1sr"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="10dp"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:id="@+id/rll4"
+                android:layout_below="@id/rl3"
+                android:background="@drawable/border"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buying"
+                    android:textStyle="bold"
+
+                    android:id="@+id/tvv1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/real1"
+                    android:layout_below="@id/tvv1"
+                    android:layout_marginTop="15dp"
+                    >
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/ic_content_paste_black_24dp"
+                        android:id="@+id/imv2v"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manage Order"
+                        android:layout_toRightOf="@id/imv2v"
+                        android:textStyle="bold"
+                        android:id="@+id/tvv2v"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14dp"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/real2"
+                    android:layout_below="@id/real1"
+                    android:layout_marginTop="15dp"
+                    >
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:paddingTop="10dp"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/ic_edit_black_24dp"                android:id="@+id/imv2vv"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Post a request"
+                        android:layout_toRightOf="@id/imv2vv"
+                        android:textStyle="bold"
+                        android:id="@+id/tvv2vv"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14dp"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/real3"
+                    android:layout_below="@id/real2"
+                    android:layout_marginTop="15dp"
+                    >
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/ic_insert_drive_file_black_24dp"                android:id="@+id/imv2vvv"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manage request"
+                        android:layout_toRightOf="@id/imv2vvv"
+                        android:textStyle="bold"
+                        android:id="@+id/tvv2vvv"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14dp"/>
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:id="@+id/rll5"
+                android:layout_below="@id/rll4"
+                android:background="@drawable/border"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:textStyle="bold"
+
+                    android:id="@+id/tvv1c"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/reall1"
+                    android:layout_below="@id/tvv1c"
+                    android:layout_marginTop="15dp"
+                    >
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/ic_content_paste_black_24dp"
+                        android:id="@+id/imv2vc"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manage Order"
+                        android:layout_toRightOf="@id/imv2vc"
+                        android:textStyle="bold"
+                        android:id="@+id/tvv2vc"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14dp"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/reall2"
+                    android:layout_below="@id/reall1"
+                    android:layout_marginTop="15dp"
+                    >
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:paddingTop="10dp"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/ic_edit_black_24dp"                android:id="@+id/imv2vvc"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Post a request"
+                        android:layout_toRightOf="@id/imv2vvc"
+                        android:textStyle="bold"
+                        android:id="@+id/tvv2vvc"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14dp"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/reall3"
+                    android:layout_below="@id/reall2"
+                    android:layout_marginTop="15dp"
+                    >
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/ic_insert_drive_file_black_24dp"                android:id="@+id/imv2vvvc"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manage request"
+                        android:layout_toRightOf="@id/imv2vvvc"
+                        android:textStyle="bold"
+                        android:id="@+id/tvv2vvvc"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14dp"/>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

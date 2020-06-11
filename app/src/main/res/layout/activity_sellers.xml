@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainrl"
+    android:layout_height="match_parent"
+    tools:context=".sellers">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlvsss"
+        android:layout_height="90dp"
+        android:onClick="dropdown"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_arrow_upward_black_24dp"
+            android:id="@+id/img"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go Back"
+            android:layout_below="@id/img"
+            android:textAlignment="center"
+
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlvsss"
+        android:id="@+id/rlvsss1">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Work your way"
+            android:textStyle="bold"
+            android:id="@+id/choss"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="14dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You bring the skill.We'll make earning easy."
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/atleast"
+            android:layout_below="@id/choss"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlvsss1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/lv1s"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="A gig is bough every"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5 sec"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueJeans"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="49dp"
+                    android:text="Projects
+Completed"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueJeans"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Price
+Range"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="500-10k"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueJeans"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/lv1s"
+            android:id="@+id/lvss"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                >
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_insert_drive_file_black_24dp"
+                    android:id="@+id/imvl"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create a gig"
+                    android:layout_toRightOf="@id/imvl"
+                    android:textStyle="bold"
+                    android:id="@+id/choss1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Offer your services to a global audience and start earning more."
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imvl"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/atleast1"
+                    android:layout_below="@id/choss1"
+                    android:textSize="10dp"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_local_post_office_black_24dp"
+                    android:id="@+id/imvls"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deliver your work"
+                    android:layout_toRightOf="@id/imvls"
+                    android:textStyle="bold"
+                    android:id="@+id/choss1s"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Use our built-in tools to communicate with your customers and deliver their orders."
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imvls"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/atleast1s"
+                    android:layout_below="@id/choss1s"
+                    android:textSize="10dp"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp">
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="5dp"
+android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_content_paste_black_24dp"
+                    android:id="@+id/imvl2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get paid"
+                    android:layout_toRightOf="@id/imvl2"
+                    android:textStyle="bold"
+                    android:id="@+id/choss2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Receive your payment once the order is complete .It's that simple."
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imvl2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/atleast2"
+                    android:layout_below="@id/choss2"
+                    android:textSize="10dp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnss"
+            android:onClick="gooo"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/lvss"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/WHITE"
+            android:background="@drawable/btn"
+            android:text="Continue"/>
+            </RelativeLayout>
+    </RelativeLayout>
+

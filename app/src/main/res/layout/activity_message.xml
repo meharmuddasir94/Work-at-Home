@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".MessageActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/rlsd"
+        android:background="@color/colorred">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+
+            android:layout_marginTop="5dp"
+            android:id="@+id/image"
+            android:src="@drawable/ic_perm_identity_black_24dp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="60dp"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="340dp"
+            android:textSize="15dp"
+            android:gravity="left|center"
+
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:minHeight="?actionBarSize"
+            android:textColor="@color/WHITE"
+            android:text="lol"
+            android:layout_toRightOf="@id/image"
+            android:layout_marginLeft="10dp"
+            android:padding="@dimen/appbar_padding"
+
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:layout_height="25dp"
+            android:layout_marginRight="-40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:id="@+id/ig"
+            android:layout_toLeftOf="@id/image"
+            android:src="@drawable/asdf" />
+    </RelativeLayout>
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/rlsd"
+        android:layout_above="@id/bottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/bottom"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_send"
+            android:background="@android:color/transparent"
+            android:hint="Type a message..."
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_menu_send"
+            android:id="@+id/btn_send"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

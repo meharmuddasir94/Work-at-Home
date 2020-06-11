@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guestproblem2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:minHeight="?actionBarSize"
+                android:textAlignment="textStart"
+                android:text="Caterogies"
+                android:textStyle="bold"
+                android:textSize="16dp"
+
+                android:padding="@dimen/appbar_padding"
+                android:textColor="@color/colorred"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_height="25dp"
+                android:id="@+id/iconsearch"
+                android:onClick="searchopen"
+                android:layout_marginLeft="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/title"
+                android:src="@drawable/ic_search_black_24dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contan"
+            android:layout_above="@id/BNV1">
+
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/colorred"
+            android:background="@color/WHITE" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

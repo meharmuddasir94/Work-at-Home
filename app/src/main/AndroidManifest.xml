@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.work_at_home">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".guestproblem2"
+            android:label="@string/title_activity_guestproblem2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".guestproblem"
+            android:label="@string/title_activity_guestproblem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".open_guestgigs" />
+        <activity android:name=".guest_gig" />
+        <activity android:name=".Payment" />
+        <activity android:name=".GooglePay" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".creditcard" />
+        <activity android:name=".buy" />
+        <activity android:name=".savename" />
+        <activity android:name=".Save_gig" />
+        <activity android:name=".MyInterset" />
+        <activity android:name=".Support" />
+        <activity android:name=".sport" />
+        <activity android:name=".term2" />
+        <activity android:name=".privacy2" />
+        <activity android:name=".Policy" />
+        <activity android:name=".privacy" />
+        <activity android:name=".MassageActivity" />
+        <activity android:name=".gig_open" />
+        <activity android:name=".gigs" />
+        <activity android:name=".ManageOrder" />
+        <activity android:name=".ManagingRequest" />
+        <activity android:name=".Guest_signup" />
+        <activity android:name=".Language_Guest" />
+        <activity android:name=".Language" />
+        <activity android:name=".HomeActivity2" />
+        <activity android:name=".guest_login" />
+        <activity android:name=".Post_A_Request" />
+        <activity android:name=".security" />
+        <activity android:name=".otpActictiy" />
+        <activity android:name=".Verification" />
+        <activity
+            android:name=".Search_view_page"
+            android:label="@string/title_activity_search_view_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".categoriesss"
+            android:label="@string/title_activity_categoriesss"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".guest_member" />
+        <activity
+            android:name=".Guest_Home"
+            android:noHistory="true" />
+        <activity android:name=".Forgetpas" />
+        <activity android:name=".Settings" />
+        <activity android:name=".sellers" />
+        <activity android:name=".Avaliable_Devices" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Google_log" />
+        <activity android:name=".Login" />
+        <activity android:name=".Sign2" />
+        <activity android:name=".Log_in" />
+        <activity android:name=".Sign_up" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

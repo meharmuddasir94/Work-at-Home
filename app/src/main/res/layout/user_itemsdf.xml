@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/rlll"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grrad">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/image"
+            android:src="@drawable/ic_perm_identity_black_24dp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welocome to Work At Home"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="29dp"
+            android:id="@+id/tv"
+            android:layout_toRightOf="@id/image"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guest"
+            android:layout_marginLeft="20dp"
+android:layout_toRightOf="@id/image"
+            android:id="@+id/tv1us"
+            android:layout_below="@id/tv"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

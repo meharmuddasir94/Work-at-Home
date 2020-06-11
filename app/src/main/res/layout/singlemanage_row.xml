@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl33"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/border1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des"
+        android:textColor="@color/green"
+        android:text="Description:"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/des2"
+        android:text="Description:"
+        android:textColor="@color/green"
+        android:layout_toRightOf="@id/des"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des"
+        android:textColor="@color/buttonNormal"
+        android:text="Days:"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/days"
+        />
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des"
+        android:text="Days:"
+        android:textColor="@color/buttonNormal"
+        android:layout_toRightOf="@id/days"
+        android:layout_marginLeft="49dp"
+        android:id="@+id/days2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget"
+
+        android:text="Budget:"
+        android:textColor="@color/yellow"
+        android:layout_below="@id/days"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget2"
+        android:layout_toRightOf="@id/budget"
+android:textColor="@color/yellow"
+        android:text="Budget:"
+        android:layout_below="@id/days"
+        android:layout_marginLeft="35dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caateg"
+        android:layout_below="@id/budget"
+        android:text="Category:"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caateg2"
+        android:layout_below="@id/budget"
+ android:layout_toRightOf="@id/caateg"
+        android:text="Category:"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="23dp"
+        />
+
+
+
+</RelativeLayout>
+</RelativeLayout>

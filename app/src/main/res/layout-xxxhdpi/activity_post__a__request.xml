@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post_A_Request">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlsd"
+        android:background="@color/colorred">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="340dp"
+
+
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:minHeight="?actionBarSize"
+            android:textAlignment="textStart"
+android:textColor="@color/WHITE"
+            android:text="Post a Request"
+            android:layout_marginLeft="50dp"
+            android:padding="@dimen/appbar_padding"
+
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_centerVertical="true"
+            android:layout_height="25dp"
+            android:layout_marginRight="-40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:id="@+id/ig"
+            android:layout_toLeftOf="@id/title"
+            android:src="@drawable/asdf" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlsd"
+        android:layout_marginTop="10dp"
+        android:text="Add a Description"
+        android:id="@+id/tvdes"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/tvdes"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:id="@+id/editdes"
+        android:hint="Maximum 300 Words"
+        android:paddingTop="10dp"
+android:gravity="top|left"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:textSize="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editdes"
+        android:layout_marginTop="10dp"
+        android:text="Choose a Category"
+
+        android:id="@+id/chosstv"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/rl3"
+        android:layout_below="@id/chosstv"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/phone"
+        android:entries="@array/Categories"
+            android:background="@color/colorWhite"
+            android:id="@+id/spinners"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:id="@+id/phone"
+android:layout_marginLeft="50dp"
+            android:paddingTop="2dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="2dp"
+
+          android:text="Categories"
+            android:textSize="12dp"
+            android:paddingLeft="10dp"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/colorout"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/phone"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="-38dp"
+
+            android:src="@drawable/ic_insert_drive_file_black_24dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl3"
+        android:layout_marginTop="10dp"
+        android:text="When would you like your services delivered?"
+
+        android:id="@+id/tvdil"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/rl4"
+        android:layout_below="@id/tvdil"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/phone1"
+            android:entries="@array/Days_arrays"
+            android:background="@color/colorWhite"
+            android:id="@+id/spinners2"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:id="@+id/phone1"
+            android:layout_marginLeft="50dp"
+            android:paddingTop="2dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="2dp"
+
+            android:text="Delivey time"
+            android:textSize="12dp"
+            android:paddingLeft="10dp"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/colorout"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/phone1"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="-38dp"
+
+            android:src="@drawable/ic_baseline_access_time_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl4"
+        android:layout_marginTop="10dp"
+        android:text="What will be your budegt?"
+
+        android:id="@+id/tvbudg"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/rl5"
+        android:layout_below="@id/tvbudg"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Min 500 PKR"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="12dp"
+            android:inputType="number"
+            android:layout_toRightOf="@id/phone1b"
+            android:background="@color/colorWhite"
+            android:id="@+id/budgt"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:id="@+id/phone1b"
+            android:layout_marginLeft="50dp"
+            android:paddingTop="2dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="2dp"
+
+            android:text="Budget "
+            android:textSize="12dp"
+            android:paddingLeft="10dp"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/colorout"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/phone1b"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="-38dp"
+
+            android:src="@drawable/ic_baseline_monetization_on_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/rl5"
+        android:textColor="@color/WHITE"
+        android:id="@+id/tvemailss"
+        />
+    <Button
+        android:layout_width="390dp"
+        android:layout_marginTop="225dp"
+        android:layout_height="56dp"
+     android:layout_centerHorizontal="true"
+        android:hint="Post a Request"
+        android:onClick="posttodb"
+
+        android:textSize="16sp"
+        android:textColorHint="@color/colorWhite"
+
+
+        android:background="@drawable/btn"
+
+        android:id="@+id/btn2"
+        android:layout_below="@id/rl5"/>
+
+
+
+
+</RelativeLayout>

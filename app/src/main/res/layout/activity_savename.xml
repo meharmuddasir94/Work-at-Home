@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".savename">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/sddf"
+        android:scaleType="fitXY"
+        android:layout_marginTop="-20dp"
+        android:id="@+id/top"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/s"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="17dp"
+        android:layout_below="@id/top"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/edit"
+        >
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="25dp"
+
+            android:paddingRight="28dp"
+            android:text="You Must have to save you name before continue "
+            android:textAlignment="center"
+            android:textColor="@color/colorot" />
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:id="@+id/rl1"
+            android:layout_below="@id/tv3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+
+            android:background="@drawable/border">
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="41dp"
+                android:id="@+id/name"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="50dp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="4dp"
+                android:hint="Name"
+                android:textColorHint="@color/colorout"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/name"
+                android:layout_marginRight="-38dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_perm_identity_black_24dp" />
+        </RelativeLayout>
+        <Button
+            android:layout_width="320dp"
+            android:layout_marginTop="24dp"
+            android:layout_height="56dp"
+            android:hint="Save"
+            android:onClick="Savetorealdb"
+            android:textSize="16sp"
+            android:textColorHint="@color/colorWhite"
+            android:layout_marginLeft="34dp"
+
+            android:background="@drawable/grrad"
+            android:id="@+id/btn2"
+            android:layout_below="@id/rl1"/>
+
+
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:id="@+id/emailx"
+        android:layout_marginTop="-100dp"/>
+</RelativeLayout>

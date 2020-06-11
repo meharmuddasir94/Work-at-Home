@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gig_open">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/gig"
+        android:scaleType="fitXY"
+        android:id="@+id/gigpic"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+    android:layout_marginTop="10dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="-40dp"
+        
+ android:onClick="back"
+android:layout_toLeftOf="@id/gigpic"
+        android:src="@drawable/asdf" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/rlll"
+        android:layout_below="@id/gigpic"
+        android:background="@drawable/grrad">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/image"
+            android:src="@drawable/ic_perm_identity_black_24dp"
+            android:background="@drawable/border"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+        android:textColor="@color/bLACK"
+            android:text="Welocome to Work At Home"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/image"
+            android:layout_marginTop="35dp"
+            android:id="@+id/tv"
+            
+           />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorPinkRose"
+
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@id/tv"
+            android:src="@drawable/ic_perm_identity_black_24dp"
+            android:contentDescription="Chat"
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlll">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlll">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/green"
+        android:text="PKR"
+        android:textSize="20dp"
+
+        android:gravity="left|center"
+        android:layout_marginLeft="10dp"
+
+        android:id="@+id/tv0"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:gravity="left|center"
+        android:text="PKR"
+        android:textSize="20dp"
+
+        android:layout_marginLeft="10dp"
+
+android:layout_toRightOf="@id/tv0"
+        android:id="@+id/tv1"
+
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Description:"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/des0"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/bLACK"
+        android:layout_below="@id/tv0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:layout_marginLeft="10dp"
+
+        android:id="@+id/desreal"
+
+        android:layout_marginTop="10dp"
+        android:textColor="@color/bLACK"
+        android:layout_below="@id/des0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category:"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/cat"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/bLACK"
+        android:layout_below="@id/desreal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Description:"
+     android:layout_alignParentEnd="true"
+        android:id="@+id/catreal"
+        android:gravity="center|right"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@id/cat"
+
+        android:layout_marginTop="10dp"
+        android:textColor="@color/bLACK"
+        android:layout_below="@id/desreal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery In:"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/del"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/bLACK"
+        android:layout_below="@id/cat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:layout_marginLeft="290dp"
+
+        android:layout_below="@id/catreal"
+
+        android:layout_toRightOf="@id/del"
+        android:id="@+id/dayreal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/bLACK"
+        />
+
+    <Button
+        android:layout_width="390dp"
+    android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="56dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Countinue Buying"
+        android:onClick="buy"
+
+
+        android:textSize="16sp"
+        android:textColorHint="@color/colorWhite"
+
+
+        android:background="@drawable/btn"
+
+        android:id="@+id/btn2"
+        android:layout_below="@id/dayreal"/>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

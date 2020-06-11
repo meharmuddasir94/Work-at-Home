@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
+        android:onClick="opentoverfy"
+        android:paddingLeft="20dp"
+        android:background="@drawable/border1"
+        android:text="Security"
+        android:id="@+id/tvf1"
+android:textStyle="bold"
+        android:textAlignment="textStart"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tvf1"
+        android:id="@+id/tvf2"
+android:onClick="terms"
+        android:paddingLeft="20dp"
+        android:background="@drawable/border1"
+        android:text="Terms of Services"
+android:textStyle="bold"
+        android:textAlignment="textStart"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tvf2"
+        android:id="@+id/tvf3"
+android:onClick="policy"
+        android:paddingLeft="20dp"
+        android:background="@drawable/border1"
+        android:text="Privacy Policy "
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tvf3"
+        android:id="@+id/tvf4"
+android:onClick="language"
+        android:paddingLeft="20dp"
+        android:background="@drawable/border1"
+        android:text="Language"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tvf4"
+        android:id="@+id/tvf5"
+        android:onClick="logout"
+        android:paddingLeft="20dp"
+        android:background="@drawable/border1"
+        android:text="Log Out"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textColor="@color/buttonNormal"
+        />
+</RelativeLayout>

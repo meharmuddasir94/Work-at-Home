@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl0"
+    tools:context=".Login">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvd"
+        android:textColor="@color/WHITE"
+        android:text="l"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/s"
+        android:id="@+id/imk"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="-30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Join our freelancing community and start earning with us "
+        android:textColorHint="@color/colorBlueJeans"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+
+        android:textSize="19dp"
+        android:id="@+id/tvt"/>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:id="@+id/rl3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvt"
+        android:layout_marginLeft="25dp"
+        android:onClick="fbbb"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/facebook">
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="41dp"
+            android:id="@+id/facebb"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/fa"
+            android:layout_marginTop="4dp"
+            android:hint="Sign Up With Facebook"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:paddingTop="8dp"
+            android:textAlignment="center"
+
+
+            android:textColorHint="@color/WHITE"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/facebb"
+
+            android:layout_marginRight="-42dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/jkl" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:id="@+id/rl"
+        android:onClick="google"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl3"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/googl">
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="41dp"
+            android:id="@+id/gmail"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginTop="4dp"
+            android:hint="Sign Up With Google"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:paddingTop="8dp"
+            android:textAlignment="center"
+
+
+            android:textColorHint="@color/WHITE"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/gmail"
+
+            android:layout_marginRight="-42dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/asd" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:id="@+id/rl2"
+        android:onClick="signup"
+        android:background="@drawable/border"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="41dp"
+            android:id="@+id/email"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="4dp"
+            android:hint="Sign Up With Email"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:paddingTop="8dp"
+            android:textAlignment="center"
+
+            android:textColorHint="@color/colorBlueJeans"
+
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/email"
+
+            android:layout_marginRight="-42dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/sddcfdv" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Be agree with our "
+        android:textColorHint="@color/bLACK"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="80dp"
+        android:textStyle="bold"
+        android:layout_below="@id/rl2"
+        android:textSize="15dp"
+        android:id="@+id/tvt2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Terms and policy"
+        android:textColorHint="@color/colorBlueJeans"
+        android:layout_marginTop="609dp"
+        android:layout_marginLeft="-292dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tvt2"
+        android:textSize="15dp"
+        android:id="@+id/tvt3"/>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvt2"
+        android:textAlignment="textStart"
+        android:background="@drawable/signnn"
+        android:hint=" Sign In"
+        android:layout_marginTop="62dp"
+        android:onClick="signIn"
+        android:textStyle="bold"
+
+        android:textColorHint="@color/colorBlueJeans"/>
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvt2"
+        android:textAlignment="textEnd"
+        android:paddingRight="10dp"
+        android:layout_marginTop="62dp"
+        android:textStyle="bold"
+        android:onClick="Guest"
+        android:textColorHint="@color/colorBlueJeans"
+        android:background="@drawable/signnn"
+        android:hint="Guest"/>
+
+
+
+
+</RelativeLayout>

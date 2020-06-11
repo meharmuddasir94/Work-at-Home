@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border1">
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+
+        android:src="@drawable/gig"
+        android:scaleType="fitXY"
+        android:id="@+id/fg"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/devgig"
+         android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/fg"
+            android:layout_marginTop="20dp"
+            android:text="herf"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/from"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/fg"
+            android:layout_below="@id/devgig"
+            android:text="From"
+            android:textColor="@color/green"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Pkr"
+            android:layout_marginTop="10dp"
+            android:text="PKR"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/devgig"
+            android:layout_toRightOf="@id/from"
+            android:textColor="@color/green"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/budget3"
+            android:textColor="@color/green"
+            android:text="35,400"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="2dp"
+            android:layout_below="@id/devgig"
+            android:layout_toRightOf="@id/Pkr"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/day4"
+            android:text="35,400"
+            android:layout_marginTop="100dp"
+android:textColor="@color/white"
+            android:layout_marginLeft="2dp"
+            android:layout_below="@id/devgig"
+            android:layout_toRightOf="@id/Pkr"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email4"
+            android:text="35,400"
+            android:textColor="@color/white"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_below="@id/devgig"
+            android:layout_toRightOf="@id/Pkr"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

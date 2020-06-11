@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    tools:context=".Main2Activity">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/v_flipper"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/s"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="-30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Freelance Platform."
+        android:textColorHint="@color/colorBlueJeans"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:id="@+id/tvt"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="You Need."
+        android:textColorHint="@color/colorBlueJeans"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:id="@+id/tvt2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/lv"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tvt2"
+        >
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="serv"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/logo">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/finf"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+
+                android:hint="Find a Services"
+                android:textColorHint="@color/bLACK"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="-130dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:onClick="seller"
+            android:background="@drawable/logo">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+
+
+
+
+                android:src="@drawable/sdf"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+
+                android:hint="Become Seller"
+                android:textColorHint="@color/bLACK"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv"
+        android:textAlignment="textStart"
+        android:background="@drawable/signnn"
+        android:hint=" Sign Up"
+        android:onClick="signups"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+
+        android:textColorHint="@color/colorBlueJeans"/>
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lv"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="35dp"
+        android:paddingRight="10dp"
+        android:textStyle="bold"
+        android:onClick="signins"
+        android:textColorHint="@color/colorBlueJeans"
+        android:background="@drawable/signnn"
+        android:hint="Sign In"/>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:id="@+id/rl33"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/gig"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/des2"
+            android:background="@drawable/border"
+
+            android:text="Description"
+            android:paddingLeft="10dp"
+            android:textColor="@color/bLACK"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/budget2"
+            android:textColor="@color/yellow"
+            android:text="Budget:"
+            android:layout_marginLeft="35dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/caateg2"
+            android:layout_below="@id/budget"
+            android:text="Category:"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="23dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days:"
+            android:textColor="@color/buttonNormal"
+            android:layout_marginLeft="49dp"
+            android:id="@+id/days2"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

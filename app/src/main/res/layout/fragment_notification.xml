@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NotificationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlfd"
+        android:layout_height="wrap_content"
+        android:background="@color/colorred">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:minHeight="?actionBarSize"
+            android:textAlignment="textStart"
+            android:text="Notification"
+            android:textStyle="bold"
+            android:paddingTop="12dp"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/WHITE"/>
+     </RelativeLayout>
+
+</FrameLayout>
